@@ -1,0 +1,50 @@
+body{
+    background-color: lightgoldenrodyellow;
+}
+nav{
+    margin: 0px;
+    background: darkgrey;
+    padding: 10px 10px 10px 10px;
+    border-bottom: dashed orange;
+}
+.nav{
+    margin: 2px 2px 4px 2px;
+    padding: 4px 8px 8px 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav:hover{
+    color: whitesmoke;
+    text-decoration: underline;
+}
+.track{
+    position: absolute;
+    z-index: 1;
+    top: 71px;
+    right: 56px;
+    width: 193px;
+    height: 192px;
+    border-radius: 50%;
+    border: 6px dashed hsl(59, 92%, 51%);
+}
+.circle{
+    position: absolute;
+    z-index: 1;
+    top: 82px;
+    right: 66px;
+    width: 185px;
+    height: 182px;
+    border-radius: 50%;
+    background-image: url(IMG_20210513_001852.jpg);
+    background-size: 350px 200px;
+}
+@keyframes rotate{
+    0% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(-340deg);
+    }
+}
+.track{
+    animation: rotate 10s infinite linear;
+}
